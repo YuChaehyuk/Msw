@@ -1,0 +1,126 @@
+.clock:hover {
+    transform:  scale(1.4);
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.anlong_clock_box {
+
+}
+
+.clock_box {
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 180px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 0 35px rgba(255, 255, 255, 0.8),
+    5px 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 210px;
+    left: 170px;
+}
+
+.anlong_clock_box::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #333333ff;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.hour,
+.min,
+.sec {
+    position: absolute;
+}
+
+.hour,
+.hr {
+    width: 70px;
+    height: 70px;
+    display: flex;  
+    left: -12px;
+    top: -18px;
+}
+
+.min
+.mn {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    position: absolute;
+    left: -29px;
+    top: -37px;        
+}       
+
+.sec,
+.sc {
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    position: absolute;
+    left: -17px;
+    top: -21px;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 32px;
+    background-color: #333333ff;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 55px;
+    background-color: #333333ff;
+    z-index: 15;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 48px;
+    background-color: #333333ff;
+    z-index: 15;
+    border-radius: 6px 6px 0 0;
+}
